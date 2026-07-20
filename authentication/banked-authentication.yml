@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.banked.com/reference
+docs: https://developer.banked.com/reference
+notes: >-
+  No public OpenAPI is available to derive from; the auth model was read from
+  the developer reference, the public Partner POC Postman collection, and the
+  MCP configuration. Banked authenticates with OAuth 2.0 client credentials:
+  clients exchange a client_id/client_secret (plus a scope that is the business
+  application ID) for a bearer access token at api.banked.com/oauth/token, then
+  call the API with Authorization: Bearer. The same OAuth server backs the
+  hosted MCP server.
+summary:
+  types:
+  - oauth2
+  oauth2_flows:
+  - clientCredentials
+schemes:
+- name: OAuth2
+  type: oauth2
+  flow: clientCredentials
+  token_url: https://api.banked.com/oauth/token
+  token_type: Bearer
+  scope_note: >-
+    The scope value carried by MCP/API clients is the business application ID
+    (BANKED_OAUTH_CLIENT_SCOPE); Banked does not publish a granular OAuth scope
+    reference, so scopes/ is intentionally omitted.
+  sources:
+  - https://github.com/banked/postman-collections-public
+  - https://github.com/banked/example-agents
