@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.banked.com/reference
+spec_type: Webhooks
+notes: >-
+  Banked delivers asynchronous payment events via webhooks managed through the
+  REST API (no published AsyncAPI document). Merchants register webhook
+  endpoints and receive event notifications for payment state changes. Up to 5
+  webhook endpoints (distinct URLs) may be registered per event. The specific
+  event-type registry is documented per-endpoint in the reference and is not
+  published as a machine-readable catalog; event names are not enumerated here
+  to avoid fabrication.
+management_api:
+  base_url: https://api.banked.com
+  list: GET /v2/webhooks
+  create: POST /v2/webhooks
+  update: PATCH /v2/webhooks/{id}
+  limit_per_event: 5
+delivery:
+  transport: https-post
+  domain: payments

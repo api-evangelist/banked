@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+notes: >-
+  Probed /.well-known/ discovery paths on the website and API hosts. Only the
+  website security.txt (RFC 9116) returned 200. OAuth/OIDC discovery documents
+  are not published at well-known paths (the OAuth token endpoint is
+  api.banked.com/oauth/token, client-credentials, documented in the reference).
+hosts:
+- host: https://banked.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: banked-security.txt
+- host: https://api.banked.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://developer.banked.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://mcp.banked.com
+  documents:
+  - path: /.well-known/oauth-authorization-server
+    status: 404

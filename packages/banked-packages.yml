@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/banked
+notes: >-
+  Banked publishes first-party mobile Checkout SDKs on its GitHub organization.
+  All three are public and clearly first-party but are currently archived
+  (read-only). No published server-side SDK (JS/Python/Ruby) or package-registry
+  distribution (npm/PyPI/RubyGems) was found; integration is REST + hosted
+  Checkout. official:true marks first-party; archived:true is recorded verbatim.
+packages:
+- language: swift-objc
+  registry: github
+  name: banked-iOS
+  url: https://github.com/banked/banked-iOS
+  install: git clone https://github.com/banked/banked-iOS
+  official: true
+  archived: true
+  description: iOS Checkout SDK (Objective-C).
+- language: kotlin
+  registry: github
+  name: banked-android-sdk
+  url: https://github.com/banked/banked-android-sdk
+  install: git clone https://github.com/banked/banked-android-sdk
+  official: true
+  archived: true
+  description: Android Checkout SDK (Kotlin).
+- language: dart
+  registry: github
+  name: banked_flutter_sdk_example
+  url: https://github.com/banked/banked_flutter_sdk_example
+  install: git clone https://github.com/banked/banked_flutter_sdk_example
+  official: true
+  archived: true
+  description: Flutter Checkout SDK example integration.

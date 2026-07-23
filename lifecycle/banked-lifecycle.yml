@@ -1,0 +1,16 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.banked.com/reference
+versioning:
+  scheme: uri-path
+  current: v3
+  docs: https://developer.banked.com/reference
+deprecation:
+  policy: version-based
+  deprecated_versions:
+  - v2
+  evidence: Payments API v3 is current; v2 is marked deprecated in the API reference
+status_page: https://status.banked.com/
+sla:
+  url: null
+  uptime_target: null

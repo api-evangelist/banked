@@ -1,0 +1,41 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.banked.com/reference
+notes: >-
+  Cross-cutting request/response semantics captured from the developer
+  reference and the public Partner POC Postman collection. Idempotency is NOT
+  asserted here: Banked does not document a client idempotency-key header in the
+  public reference, so no Idempotency pointer is emitted (no fabrication).
+authentication:
+  style: oauth2-client-credentials
+  token_url: https://api.banked.com/oauth/token
+  header: 'Authorization: Bearer <token>'
+  detail: authentication/banked-authentication.yml
+base_url: https://api.banked.com
+versioning:
+  scheme: uri-path
+  current: v3
+  deprecated:
+  - v2
+  partner_api: partner/v1
+  detail: lifecycle/banked-lifecycle.yml
+resources:
+  payment_sessions:
+    create: POST /v2/payment_sessions
+    retrieve: GET /v2/payment_sessions/{id}
+  partner_businesses:
+    create: POST /partner/v1/businesses
+  webhooks:
+    list: GET /v2/webhooks
+    create: POST /v2/webhooks
+    update: PATCH /v2/webhooks/{id}
+    detail: asyncapi/banked-webhooks.yml
+events:
+  delivery: webhooks
+  limit: Up to 5 webhook endpoints (distinct URLs) per event
+  detail: asyncapi/banked-webhooks.yml
+error_envelope:
+  documented: false
+  note: >-
+    A structured error schema is not published in a machine-readable spec; the
+    reference documents per-endpoint error responses in prose.

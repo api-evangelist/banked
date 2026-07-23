@@ -1,7 +1,15 @@
 aid: banked
 name: Banked
-description: Banked is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Banked is a global account-to-account (A2A) payments network built on open
+  banking that enables real-time pay-by-bank payments for consumers, businesses,
+  and banks. Its API-first platform provides hosted Checkout, Payment Links and
+  QR codes, Payouts, Refunds, Reporting, loyalty (Incentivize), and fraud
+  protection, using bank-native biometric authentication and Strong Customer
+  Authentication (SCA) to move money securely with minimal chargebacks. A single
+  Payments API and Partner API integration gives merchants and platforms access
+  across multiple markets, and Banked ships an official hosted MCP server so
+  agents can create, search, and refund payments over OAuth 2.0.
 url: https://raw.githubusercontent.com/api-evangelist/banked/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +17,113 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://images.prismic.io/banked/dc1e104e-b397-4f26-ba16-0b64aee7daea_page-og-2.png?auto=compress,format&w=1200&h=627
 tags:
 - Company
-apis: []
+- Payments
+- Open Banking
+- Account-to-Account
+- Pay by Bank
+- Fintech
+- Payment Processing
+- Payouts
+apis:
+- name: Banked Payments API
+  description: >-
+    Account-to-account payments over open banking — create payment sessions
+    (checkout), payouts, refunds, and webhooks. The Partner API onboards
+    businesses on behalf of platforms. OAuth 2.0 client-credentials auth against
+    api.banked.com.
+  humanURL: https://developer.banked.com/reference
+  baseURL: https://api.banked.com
+  properties:
+  - type: Documentation
+    url: https://developer.banked.com/
+  - type: APIReference
+    url: https://developer.banked.com/reference
+  - type: Authentication
+    url: authentication/banked-authentication.yml
+  - type: MCPServer
+    url: mcp/banked-mcp.yml
+  - type: Webhooks
+    url: asyncapi/banked-webhooks.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/banked-vulnerability-disclosure.yml
+- type: Security
+  url: security/banked-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/banked-domain-security.yml
 - type: Website
   url: https://banked.com/
+- type: DeveloperPortal
+  url: https://developer.banked.com/
+- type: Documentation
+  url: https://developer.banked.com/
+- type: APIReference
+  url: https://developer.banked.com/reference
+- type: GettingStarted
+  url: https://developer.banked.com/docs
+- type: Support
+  url: https://support.paybybank.com
+- type: Login
+  url: https://console.banked.com/
+- type: Blog
+  url: https://medium.com/@banked
+- type: PrivacyPolicy
+  url: https://banked.com/privacy
+- type: GitHubOrganization
+  url: https://github.com/banked
+- type: Postman
+  url: https://github.com/banked/postman-collections-public
+- type: StatusPage
+  url: https://status.banked.com/
+- type: Packages
+  url: packages/banked-packages.yml
+- type: SDKs
+  url: packages/banked-packages.yml
+- type: WellKnown
+  url: well-known/banked-well-known.yml
+- type: SecurityTxt
+  url: well-known/banked-security.txt
+- type: MCPServer
+  url: mcp/banked-mcp.yml
+- type: LLMsTxt
+  url: llms/banked-llms.txt
+- type: Authentication
+  url: authentication/banked-authentication.yml
+- type: Conventions
+  url: conventions/banked-conventions.yml
+- type: Conformance
+  url: conformance/banked-conformance.yml
+- type: Lifecycle
+  url: lifecycle/banked-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/banked-lifecycle.yml
+- type: Webhooks
+  url: asyncapi/banked-webhooks.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

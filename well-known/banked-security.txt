@@ -1,0 +1,4 @@
+Contact: mailto:security@banked.com
+Expires: 2025-06-01T00:00:00.000Z
+Preferred-Languages: en
+Policy: Please email your initial findings to security@banked.com for an invite to our Bug Bounty program
