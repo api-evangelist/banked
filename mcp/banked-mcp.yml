@@ -2,13 +2,10 @@ generated: '2026-07-18'
 method: searched
 status: published
 source: https://github.com/banked/example-agents
-notes: >-
-  Banked ships an official hosted MCP server for agent-driven payments. The
-  example-agents repository demonstrates connecting to it. The server requires
-  OAuth 2.0 (client credentials): BANKED_OAUTH_CLIENT_ID, _CLIENT_SECRET, and
-  _CLIENT_SCOPE (the business application ID), exchanged at the token endpoint.
-  Endpoint returned HTTP 401 to an unauthenticated probe, confirming it is live
-  and auth-gated.
+notes: 'Banked ships an official hosted MCP server for agent-driven payments. The example-agents repository
+  demonstrates connecting to it. The server requires OAuth 2.0 (client credentials): BANKED_OAUTH_CLIENT_ID,
+  _CLIENT_SECRET, and _CLIENT_SCOPE (the business application ID), exchanged at the token endpoint. Endpoint
+  returned HTTP 401 to an unauthenticated probe, confirming it is live and auth-gated.'
 server:
   name: banked
   transport: http
@@ -28,3 +25,10 @@ tools:
   description: Filter and search payments.
 - name: payments.refund
   description: Refund a payment.
+deployment:
+  mode: remote
+  endpoint: https://mcp.banked.com
+  verified: probed
+  probe: gated
+  checked: '2026-08-12'
+  source: catalog MCP census
