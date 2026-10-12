@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/banked/integrations
+- https://n8n.io/integrations/banked/
+- https://composio.dev/toolkits/banked
+- https://monid.ai/tools/banked
+checked:
+- https://composio.dev/toolkits/banked
+- https://monid.ai/tools/banked
+- https://n8n.io/integrations/banked/
+- https://zapier.com/apps/banked/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
