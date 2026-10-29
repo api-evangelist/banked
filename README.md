@@ -64,6 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Banked is a company surfaced as a portfolio company of insight-partners and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Banked is a global account-to-account (A2A) payments network built on open banking that enables real-time pay-by-bank payments for consumers, businesses, and banks. Its API-first platform provides hosted Checkout, Payment Links and QR codes, Payouts, Refunds, Reporting, loyalty (Incentivize), and fraud protection, using bank-native biometric authentication and Strong Customer Authentication (SCA) to move money securely with minimal chargebacks. A single Payments API and Partner API integration gives merchants and platforms access across multiple markets, and Banked ships an official hosted MCP server so agents can create, search, and refund payments over OAuth 2.0.
 
-Backed by: insight-partners — https://banked.com/
+**Areas:** Company · Payments · Open Banking · Account-to-Account · Pay by Bank · Fintech · Payment Processing · Payouts
+
+## Banked on APIs.io
+
+Everything profiled for Banked is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/banked/](https://apis.io/providers/banked/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Banked Payments API](https://apis.io/apis/banked/banked-payments-api/) — Account-to-account payments over open banking — create payment sessions (checkout), payouts, refunds, and webhooks. The Partner API onboards businesses on…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Banked Webhooks](https://apis.io/asyncapis/banked/banked-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [banked](https://apis.io/servers/banked/banked/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Banked Authentication](https://apis.io/security/banked/banked-authentication/)
+- [Banked Domain Security](https://apis.io/security/banked/banked-domain-security/)
+- [Banked Vulnerability Disclosure](https://apis.io/security/banked/banked-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://banked.com/)
+- [Documentation](https://developer.banked.com/)
+- [Getting started](https://developer.banked.com/docs)
+- [API reference](https://developer.banked.com/reference)
+- [Support](https://support.paybybank.com)
+- [Blog](https://medium.com/@banked)
+- [Privacy policy](https://banked.com/privacy)
+- [GitHub](https://github.com/banked)
+- [Status](https://status.banked.com/)
+
+## API Evangelist rating
+
+**Kin Score 37.8** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 44.7 |
+| Developer ergonomics | 45.2 |
+| Access clarity | 17.1 |
+
+**Agent readiness 28.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 21.3** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/banked/](https://apis.io/providers/banked/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Banked: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/banked/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
